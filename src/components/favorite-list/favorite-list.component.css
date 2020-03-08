@@ -1,0 +1,17 @@
+.note {
+  margin: 10px;
+  width: 90%;
+  padding: 10px;
+}
+.noteActive {
+  background-color: rgb(7, 255, 255);
+}
+.noteUnActive {
+  background-color: rgb(173, 177, 177);
+}
+.note .noteId {
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+  color: white;
+  background-color: darkblue;
+}
