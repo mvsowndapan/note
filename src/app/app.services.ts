@@ -1,3 +1,3 @@
-import { NoteListService } from "../services/note-list.service";
 
-export const appServices = [NoteListService];
+import { ThemeService } from "../services/theme.service"
+export const appServices = [ThemeService];

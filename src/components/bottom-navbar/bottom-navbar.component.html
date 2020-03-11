@@ -1,0 +1,13 @@
+<mat-card [ngStyle]="styles.BottomNavCardStyles">
+  <mat-grid-list cols="8" rows="1" rowHeight="70px" [ngStyle]="styles.BottomNavGrid">
+    <mat-grid-tile *ngFor="let item of navItems" (click)="navigateTo(item)" [matRippleCentered]="centered"
+      [matRippleUnbounded]="unbounded" matRipple [ngStyle]="styles.BottomNavTile" [colspan]="2" [rowspan]="1">
+      <div *ngIf="checkSelected(item.id); else elseBlock">
+        <i class={{item.icon}} style="color: green;"></i>
+      </div>
+      <ng-template #elseBlock>
+        <i class={{item.icon}}></i>
+      </ng-template>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

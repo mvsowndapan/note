@@ -1,8 +1,0 @@
-<p>favorite-list works!</p>
-<div
-  *ngFor="let favorite of favorites"
-  (click)="onSelectNote(favorite)"
-  [ngClass]="selected(favorite.id)"
->
-  <span class="noteId">{{ favorite.id }}</span> {{ favorite.name | uppercase }}
-</div>

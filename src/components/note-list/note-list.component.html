@@ -1,8 +1,0 @@
-<p>note-list works!</p>
-<div
-  *ngFor="let note of notes"
-  (click)="onSelectNote(note)"
-  [ngClass]="selected(note.id)"
->
-  <span class="noteId">{{ note.id }}</span> {{ note.name | uppercase }}
-</div>
