@@ -5,7 +5,9 @@ const AppModules = [BrowserModule, StorageServiceModule]
 //components
 import { AppComponent } from "./app.component";
 import { BottomNavbarComponent } from "../components/bottom-navbar/bottom-navbar.component";
-const components = [AppComponent, BottomNavbarComponent];
+import { HomeNavComponent } from '../components/Home/home-nav/home-nav.component';
+
+const components = [AppComponent, BottomNavbarComponent, HomeNavComponent];
 
 //routing
 import { routingComponents, routingModules } from "./app-routing.module";
@@ -18,6 +20,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatCardModule } from "@angular/material/card";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatRippleModule } from '@angular/material/core';
+
+
 
 const materialModules = [
   BrowserAnimationsModule,

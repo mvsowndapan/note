@@ -1,6 +1,9 @@
-<!-- <a routerLink="/note-list" class="anchorTag">Note List</a>
-<a routerLink="/favorite-list" class="anchorTag">Favorite List</a> -->
-<!-- <router-outlet></router-outlet> -->
 <div [ngStyle]="styles.AppTheme">
-    <app-bottom-navbar></app-bottom-navbar>
+    <div *ngIf="internetConnection.status ; else elseBlock">
+        <router-outlet></router-outlet>
+        <app-bottom-navbar></app-bottom-navbar>
+    </div>
+    <ng-template #elseBlock>
+        <div>Opps no Internet connection</div>
+    </ng-template>
 </div>
